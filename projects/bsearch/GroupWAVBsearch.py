@@ -5,6 +5,32 @@
 #Ashanti
 #Tyler
 
+#Hezekiah's code starts here
+
+def bsearch(horribleBandShirtList, name):
+	searchFor = raw_input ("Who are you trying to find? Please enter their name followed by an ampersand (Ex. Tina&): ")
+	firstName = 0
+	lastName = len(horribleBandShirtList)
+	found = False
+	
+	while firstName < lastName and horribleBandShirtList != 0 and not found:
+		middle = ((firstName + lastName) // 2)
+		
+		if horribleBandShirtList [middle] < searchFor:
+			firstName = middle
+		
+		elif horribleBandShirtList [middle] > searchFor:
+			lastName = middle
+		
+		else:
+			found = True
+	
+	if found == True:
+		return middle 
+	else:
+		return -1
+
+
 #Eboni's code start's here
 
 def bsearch (itemB, bList):
@@ -40,11 +66,11 @@ def bsearch(list,x):
 			a += 1
 		
 		if list[n] == x:
-			print n
+			return n
 		else:
-			print -1
+			return -1
 	else:
-		print -1	
+		return -1	
 
 
    
