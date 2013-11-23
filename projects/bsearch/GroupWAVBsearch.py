@@ -117,6 +117,37 @@ def binarySearch(MyPurpose, waveList):
     return Discovery
 
     print binarySearch(MyPurpose, waveList)
+    
+
+
+#Michelle's code starts here
+
+def bsearch():
+	
+	first_element = 0
+	last_element = len(List) - 1 
+	found = False
+	find_name = "Gunther"
+	
+	while first_element < last_element and found == False:
+		middle_element = ((first_element + last_element) / 2)
+		
+		if List > 0:
+			return 1
+		
+		elif List[middle_element] < find_name:
+			first_element = middle_element + 1
+			
+		elif List[middle_element] > find_name:
+			last_element = middle_element
+			
+		else:
+			found = True
+	
+	if found:
+		return find_name 
+	else:
+		return -1
             
     
                  
