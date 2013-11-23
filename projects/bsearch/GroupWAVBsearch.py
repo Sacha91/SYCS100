@@ -13,7 +13,7 @@ def bsearch(horribleBandShirtList, name):
 	lastName = len(horribleBandShirtList)
 	found = False
 	
-	while firstName < lastName and horribleBandShirtList != 0 and not found:
+	while firstName < lastName and horribleBandShirtList >= 0 and not found:
 		middle = ((firstName + lastName) // 2)
 		
 		if horribleBandShirtList [middle] < searchFor:
